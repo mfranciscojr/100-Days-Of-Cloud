@@ -41,8 +41,10 @@ Required:
 - Create a user account for Reid and Richer
 - Create two groups, S3 with full access and RDS with Read Only Privilege
 - Assign Reid to S3 groups with progmatic access
-- Assign Richter to RDS without progmatic access 
+- Assign Richter to RDS without progmatic access
+  
+![Lab](./../../images/100daysofcloud-day001.gifimages)
 
 ## Social Proof
 
-(https://youtu.be/tHoDYWbYgxk)
+![Youtube Link](https://youtu.be/tHoDYWbYgxk)
