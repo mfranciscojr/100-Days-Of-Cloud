@@ -56,7 +56,7 @@ Required:
 - Assign Arthas to RDS without progmatic access
 
 #### CLI Lab Solution
-
+![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/Day001/100daysofcloud-day001b.gif)
 [![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/6qWyGZQ7S6o)
 
 ### IAM Policies Inheritance:
