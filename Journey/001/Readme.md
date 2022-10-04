@@ -141,3 +141,17 @@ Reference:
   - Mobile SDK (Android, IOS)
   - IOT Device SDK (Embedded C, Arduino)
 
+### IAM Roles for AWS Services
+
+:spiral_notepad: Notes:
+
+- Some AWS service will need to perform action on user's behalf.
+- Common Roles:
+  - EC2 Instance Roles
+  - Lambda Function Roles
+  - Roles for CloudFormation
+
+### :computer: Hands on Lab - Create a IAM Role for AWS Services with READ ONLY Access for EC2 Instances to Read IAM
+
+- Create a role named ReadOnlyEC2 for AWS Service with ReadOnly Access for EC2 Instances to view IAM Service
+- Create an EC2 Instace and test the role.
