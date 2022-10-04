@@ -44,7 +44,6 @@ Required:
 - Assign Richter to RDS without progmatic access
 
 #### Gui Lab Solution
-![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/Day001/100daysofcloud-day001.gif)
 [![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/tHoDYWbYgxk)
 
 ### :computer: Hands on Lab - IAM Users and Groups via CLI
@@ -56,7 +55,6 @@ Required:
 - Assign Arthas to RDS without progmatic access
 
 #### CLI Lab Solution
-![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/Day001/100daysofcloud-day001b.gif)
 [![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/6qWyGZQ7S6o)
 
 ### IAM Policies Inheritance:
@@ -75,7 +73,71 @@ Consist of
 Statement consist of
 - SID: an identifier for the statement(optional)
 - Effect: whether the statement allows or denies the access(Allow,Deny)
-
+- Principal: account/user/role which this policies applies to.
+- Action: List of actions this policy allow or denies
+- Resource: List of resources to which the actions applied to.
+  
 Reference:
 
 ![IAM Policies](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/Day001/iampolicystructure.png)
+
+### IAM Password Policy
+
+:spiral_notepad: Notes:
+
+- Strong Password: higher security for the account
+- In AWS, you can setup a password policy
+  - set minimum password length
+  - require specific character types
+    - uppercase
+    - lowercase
+    - numbers
+    - non-alphanumeric characters
+- Allow all IAM users change their passwords
+- Have a password expiration which users needs to change periodically.
+- Prevent password re-use
+
+### MFA (Multi Factor Authentication)
+
+:spiral_notepad: Notes:
+
+- Provides additional layer of protection for AWS user account by having a digital or physical authenticators.
+- Best practice to use MFA for all aws accounts.
+- Even if password is compromised account is still secured as the bad actor needs the MFA to login.
+
+### How can users access AWS?
+
+:spiral_notepad: Notes:
+
+- To access AWS, three options are available
+  - AWS management console (Password + MFA)
+  - AWS Command Line Interface using access keys (CLI)
+  - AWS SDK - Software Development Kit
+- Access Keys are generated through the AWS Console
+- Users manage their own acces keys
+- Access Keys are secret, just like password. Don't share them.
+  
+### What is AWS CLI?
+
+:spiral_notepad: Notes:
+
+- A tool that enables you to interact with AWS services using commands in your command line shell/terminal.
+- Direct access to the public API's oif AWS Services.
+- You can develop scripts to manage your resources.
+- It's open-source
+- Alternative to using AWS Console
+
+
+### What is AWS SDK?
+
+:spiral_notepad: Notes:
+
+- AWS SDK - Software development kit
+- Language specific API's(set of libraries)
+- Enables you to access and manage AWS Services Programmatically
+- Embedded within application
+- Supports
+  - Javascript, Python, PHP, .NET, Ruby, Java, Go, NodeJS, C++)
+  - Mobile SDK (Android, IOS)
+  - IOT Device SDK (Embedded C, Arduino)
+
