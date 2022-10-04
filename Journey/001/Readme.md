@@ -34,7 +34,7 @@ These policies define the permission of the users
 
 In AWS you apply the concept of least privilege access, don't give more permissions than a user needs.
 
-### :computer: Hands on Lab - IAM Users and Groups
+### :computer: Hands on Lab - IAM Users and Groups via GUI
 
 Required:
 
@@ -43,9 +43,19 @@ Required:
 - Assign Reid to S3 groups with progmatic access
 - Assign Richter to RDS without progmatic access
 
-#### Lab  
+#### Gui Lab Solution
 ![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/100daysofcloud-day001.gif)
-
-## Social Proof
-
 [![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/tHoDYWbYgxk)
+
+### :computer: Hands on Lab - IAM Users and Groups via CLI
+Required:
+
+- Create a user account for Summer and Arthas
+- Create two groups, S3 with full access and RDS with Read Only Privilege
+- Assign Summer to S3 groups with progmatic access
+- Assign Arthas to RDS without progmatic access
+
+#### CLI Lab Solution
+
+[![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/6qWyGZQ7S6o)
+
