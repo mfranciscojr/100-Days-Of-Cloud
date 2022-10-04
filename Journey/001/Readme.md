@@ -44,7 +44,7 @@ Required:
 - Assign Richter to RDS without progmatic access
 
 #### Gui Lab Solution
-![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/100daysofcloud-day001.gif)
+![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/Day001/100daysofcloud-day001.gif)
 [![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/tHoDYWbYgxk)
 
 ### :computer: Hands on Lab - IAM Users and Groups via CLI
@@ -75,3 +75,7 @@ Consist of
 Statement consist of
 - SID: an identifier for the statement(optional)
 - Effect: whether the statement allows or denies the access(Allow,Deny)
+
+Reference:
+
+![IAM Policies](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/Day001/iampolicystructure.png)
