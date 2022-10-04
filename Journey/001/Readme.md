@@ -43,7 +43,7 @@ Required:
 - Assign Reid to S3 groups with progmatic access
 - Assign Richter to RDS without progmatic access
   
-![Lab](.../images/100daysofcloud-day001.gif)
+![Lab](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/main/images/100daysofcloud-day001.gif)
 
 ## Social Proof
 
