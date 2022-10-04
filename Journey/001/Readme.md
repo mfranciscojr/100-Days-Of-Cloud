@@ -59,3 +59,19 @@ Required:
 
 [![Youtube](https://img.youtube.com/vi/tHoDYWbYgxk/0.jpg)](https://youtu.be/6qWyGZQ7S6o)
 
+### IAM Policies Inheritance:
+:spiral_notepad: Notes:
+
+Inline Policies are policy that is only attached to a user.
+All policies defined are inherited by the user if assigned to a group.
+User can be a member of multiple groups thus inheriting multiple policies.
+
+IAM Policies Structure
+Consist of
+- Version: policy language version always include a date
+- ID: an identifier for the policy. (optional attribute)
+- Statement: one or more individual statements(required attribute)
+  
+Statement consist of
+- SID: an identifier for the statement(optional)
+- Effect: whether the statement allows or denies the access(Allow,Deny)
