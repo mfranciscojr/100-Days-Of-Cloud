@@ -1,52 +1,48 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+<!-- This template removes the micro tutorial for a quicker post and removes images for a full template check out the 000-DAY-ARTICLE-LONG-TEMPLATE.MD-->
 
-# New post title here
+# Day 001 - AWS IAM
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
-
-## Prerequisite
-
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+✍️ (Why) To learn AWS IAM to better understand how access and permission works on AWS.
 
 ## Use Case
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
 - ✍️ (Show-Me) Explain in one or two sentences the use case
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+### IAM Users and Groups
 
-## Try yourself
+:spiral_notepad: Notes:
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+IAM = Identity and Access Management. Global Service.
 
-### Step 1 — Summary of Step
+Root Account are created by default, should not be used or shared(best practice).
 
-![Screenshot](https://via.placeholder.com/500x300)
+Users are people within the organization and can be grouped together.
 
-### Step 1 — Summary of Step
+Groups only contains user not other groups
 
-![Screenshot](https://via.placeholder.com/500x300)
+### IAM Permissions:
 
-### Step 3 — Summary of Step
+:spiral_notepad: Notes:
 
-![Screenshot](https://via.placeholder.com/500x300)
+Users and groups can be assigned JSON documents called policies.
 
-## ☁️ Cloud Outcome
+These policies define the permission of the users
 
-✍️ (Result) Describe your personal outcome, and lessons learned.
+In AWS you apply the concept of least privilege access, don't give more permissions than a user needs.
 
-## Next Steps
+### :computer: Hands on Lab - IAM Users and Groups
 
-✍️ Describe what you think you think you want to do next.
+Required:
+
+- Create a user account for Reid and Richer
+- Create two groups, S3 with full access and RDS with Read Only Privilege
+- Assign Reid to S3 groups with progmatic access
+- Assign Richter to RDS without progmatic access 
 
 ## Social Proof
 
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+(https://youtu.be/tHoDYWbYgxk)
