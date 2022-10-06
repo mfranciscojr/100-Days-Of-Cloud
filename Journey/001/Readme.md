@@ -153,5 +153,10 @@ Reference:
 
 ### :computer: Hands on Lab - Create a IAM Role for AWS Services with READ ONLY Access for EC2 Instances to Read IAM
 
-- Create a role named ReadOnlyEC2 for AWS Service with ReadOnly Access for EC2 Instances to view IAM Service
-- Create an EC2 Instace and test the role.
+- Create an EC2 Instance and test access to iam by running aws iam list-users.
+- Create a role named ReadOnlyEC2 for AWS Service with ReadOnly Access for EC2 Instances to view IAM permission with read-only privilege
+- Attach the role to the EC2 Instance created.
+- Test the permission by running ``` iam list-roles ```, it should return the list of users.
+- Test the permission by running ``` aws iam create-user --user-name test ``` it should not allow the command to succeed due to the permission level of read-only.
+
+[![Youtube](https://img.youtube.com/vi/R52vYaWn0oc/0.jpg)](https://youtu.be/R52vYaWn0oc)
