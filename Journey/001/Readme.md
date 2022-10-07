@@ -160,3 +160,47 @@ Reference:
 - Test the permission by running ``` aws iam create-user --user-name test ``` it should not allow the command to succeed due to the permission level of read-only.
 
 [![Youtube](https://img.youtube.com/vi/R52vYaWn0oc/0.jpg)](https://youtu.be/R52vYaWn0oc)
+
+### IAM Security Tools
+
+- IAM Security Tool (Account Level)
+  - a report that lists all account users and status of their various credentials.
+- IAM Access Advisor (User Level)
+  - Access advisor shows the service permissions granted to a user when those services were last accessed. 
+  - This tool can be used to revise policy for users.
+
+### IAM Best Practices
+
+- Don't use the root account except for AWS Account setup.
+- One physical user == one aws user account.
+- Assign user's to groups and assign permission to groups.
+- Create a strong password policy.
+- Use and enforce the use of MFA(Multi Factor Authentication).
+- Create and use Roles for giving permission to AWS services.
+- Use access Keys for progmmatic access (CLI/SDK)
+- Audit permissions of your acount with the IAM Credentials Report.
+- Never share IAM users and Access Keys.
+
+### IAM Shared Responsibility Model
+
+#### AWS is responsible for:
+- Infrastructure (Global Network Security).
+- Configuration and vulnerability analysis.
+- Compliance validation.
+
+#### Owner is responsible for:
+- Users, Groups, Roles, Policies management and monitoring.
+- Enable MFA on all accounts.
+- Rotate all your keys often.
+- Use IAM tools to apply appropriate permissions.
+- Analyze the access patterns & review permissions.
+
+### IAM Summary
+
+- Users = mapped to a physical users, has password for AWS console.
+- Groups = contains user only.
+- Policies = JSON document that outlines permissions for users or groups.
+- Roles = for EC2 instances or AWS Services.
+- Security: MFA + Password Policy.
+- AWS CLI = manage your AWS services using the command line.
+- AWS SDK = manage your services using programming language.
