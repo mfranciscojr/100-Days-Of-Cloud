@@ -6,12 +6,6 @@
 
 ✍️ (Why) To learn AWS IAM to better understand how access and permission works on AWS.
 
-## Use Case
-
-- ✍️ (Show-Me) Explain in one or two sentences the use case
-
-## Cloud Research
-
 ### IAM Users and Groups
 
 :spiral_notepad: Notes:
