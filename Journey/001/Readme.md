@@ -1,4 +1,4 @@
-![placeholder image](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/b09b56dea78bc5e78a4f240e92ab815d844c90aa/images/Day002/day002.png)
+![placeholder image](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/cbb300961e3c20f632e70075ba9a598464d022d9/images/Day001/day001.png)
 
 # Day 001 - AWS IAM
 
