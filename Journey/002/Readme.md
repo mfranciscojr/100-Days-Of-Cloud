@@ -1,5 +1,5 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+
+![placeholder image](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/b09b56dea78bc5e78a4f240e92ab815d844c90aa/images/Day002/day002.png)
 
 # New post title here
 
