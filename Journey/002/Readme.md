@@ -55,4 +55,4 @@ Goal: Learn EC2 to further add knowledge about AWS Services to help me in my cer
 
 ## EC2 Instace Types Sample
 
-! [InstanceType](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/d07c5f5b060b45f830e37b5c96f9d0f9f34be07c/images/Day002/Ec2-Instance-Type-Examples.png)
+![InstanceType](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/d07c5f5b060b45f830e37b5c96f9d0f9f34be07c/images/Day002/Ec2-Instance-Type-Examples.png)
