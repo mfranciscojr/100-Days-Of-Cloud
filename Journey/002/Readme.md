@@ -14,4 +14,45 @@ Goal: Learn EC2 to further add knowledge about AWS Services to help me in my cer
 
 - Deploying servers and services on AWS using EC2 instances.
 
+## What is AWS EC2
 
+- EC2 is one of the most popular of AWS service offering.
+- EC2 = Elastic Compute Cloud = Infrastructure As A Service (IAAS)
+- It mainly consists in the capability of:
+  - Renting virtual machine(EC2).
+  - Storing data on virtual drives(EBS or Elastic Block Storage).
+  - Distributing load accross machine(ELB or Elastic Load Balancer).
+  - Scaling the services using an auto-scaling group (ASG).
+- Knowing EC2 is fundamental to understand how cloud works.
+
+## EC2 Sizing and configuration options
+
+- Operating System Supported
+  - Linux 
+  - Windows
+  - Mac
+- How much compute power and cores(CPU)
+- How much random access memory(RAM)
+- How much storage space
+  - Network-Attached (EBS/EFS)
+  - Hardware(EC2 Instance Store)
+- Network card
+  - speed of the interface
+  -  Public IP address
+- Firewall rules(security group)
+- Bootstrap script(configure at first launch) EC2 User Data
+
+## EC2 User Data
+- It is possible to bootstrap our instances using an EC2 User Data script.
+- Bootstrapping means launching commands when a machine starts.
+- that script is only run once at the instance first start.
+- EC2 user data is used to automate boots task such as:
+  - install updates
+  - install software
+  - download common files from the internet
+  - anything you can think of to automate
+- The EC2 User Data Script runs with a root user
+
+## EC2 Instace Types Sample
+
+! [InstanceType]()
