@@ -2,7 +2,7 @@
 ![placeholder image](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/b09b56dea78bc5e78a4f240e92ab815d844c90aa/images/Day002/day002.png)
 
 # New post title here
-
+Day 002 - EC2
 ## Introduction
 
 ✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
