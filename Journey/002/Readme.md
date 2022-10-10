@@ -56,3 +56,14 @@ Goal: Learn EC2 to further add knowledge about AWS Services to help me in my cer
 ## EC2 Instace Types Sample
 
 ![InstanceType](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/d07c5f5b060b45f830e37b5c96f9d0f9f34be07c/images/Day002/Ec2-Instance-Type-Examples.png)
+
+---
+
+## Hands On Lab (AWS Management Console)
+#### Task:
+- Create an free tier t2.micro EC2 Instance via AWS Management console.
+- Use EC2 User Data Script to update and install a web server.
+- Create a security group and allow ssh and http access from the public to the EC2 instance.
+- Test connectivity.
+  
+## Solution:
