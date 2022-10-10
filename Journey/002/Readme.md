@@ -63,7 +63,16 @@ Goal: Learn EC2 to further add knowledge about AWS Services to help me in my cer
 #### Task:
 - Create an free tier t2.micro EC2 Instance via AWS Management console.
 - Use EC2 User Data Script to update and install a web server.
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+```
 - Create a security group and allow ssh and http access from the public to the EC2 instance.
 - Test connectivity.
   
 ## Solution:
+[![Youtube](https://img.youtube.com/vi/NGaRHg0VFsc/0.jpg)](https://www.youtube.com/watch?v=NGaRHg0VFsc)
