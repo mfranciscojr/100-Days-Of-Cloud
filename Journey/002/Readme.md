@@ -103,6 +103,8 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
     - High Performance computing(HPC)
     - Scientific modelling and machine learning
     - Dedicated gaming servers
+  
+![compute-optimized](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/052097c4066526897b8e591f0683d29d091eebad/images/Day002/compute-optimized.png)
 
 - ### Memory Optimized
   - Fast performance for workloads that process large data sets in memory.
@@ -111,4 +113,13 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
     - Distributed web scale cache stores
     - In - memory databases optimized for BI(Business Intelligence)
     - Applications performing real-time processing of big structured data.
-  - R Series EC2
+
+![Memory-optimized](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/052097c4066526897b8e591f0683d29d091eebad/images/Day002/memory-optimized.png)
+
+- ### Storage Optimized
+  - Great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage.
+  - Use Cases:
+    - High frequency online transaction processing (OLTP) systems.
+    - Relational and NOSQL databases.
+
+![storage-optimized](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/052097c4066526897b8e591f0683d29d091eebad/images/Day002/storage-optimized.png)
