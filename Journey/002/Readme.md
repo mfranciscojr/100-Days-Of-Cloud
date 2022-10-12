@@ -91,7 +91,8 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 - ### General Purpose
   - Great for diversity of workloads such as web servers or code repositories.
   - Balance between compute, memory and networking
-
+  
+![general purpose](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/acb44ff5bf9fa824cece944630a743920a352b97/images/Day002/EC2-General%20Purpose%20Optimized.png)
 
 - ### Compute Optimed
   - Great for compute-intensive task that requires high-performance processors
