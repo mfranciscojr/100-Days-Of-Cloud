@@ -6,3 +6,9 @@
 
 Goal: Learn Security Groups to further add knowledge about AWS Services to help me in my certification.
 
+## Introduction to Security Groups
+- Security groups are the fundamental of network security in AWS.
+- They control how traffic is allowed into or out of EC2 Instances.
+- Security groups only contain allow rules.
+- Security groups can reference by IP or by security groups.
+- 
