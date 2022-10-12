@@ -121,5 +121,9 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
   - Use Cases:
     - High frequency online transaction processing (OLTP) systems.
     - Relational and NOSQL databases.
+    - Cache for in-memory databases(Redis)
+    - Data warehousing applications
+    - Distributed file-systems
 
 ![storage-optimized](https://github.com/mfranciscojr/100-Days-Of-Cloud/blob/052097c4066526897b8e591f0683d29d091eebad/images/Day002/storage-optimized.png)
+
