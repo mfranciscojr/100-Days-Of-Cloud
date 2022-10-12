@@ -13,9 +13,9 @@
 
 ## Stepping out the door
 
-- [ ] ☁️ 1 > [My First Day - IAM](Journey/001/Readme.md)
-- [ ] ☁️ 2 > [My Second Day - EC2](Journey/002/Readme.md)
-- [ ] ☁️ 3 > [](Journey/003/Readme.md)
+- [ ] ☁️ 1 > [My 1st Day - IAM - Identity Access Management](Journey/001/Readme.md)
+- [ ] ☁️ 2 > [My 2nd Day - EC2 Instance](Journey/002/Readme.md)
+- [ ] ☁️ 3 > [My 3rd Day - Security Groups](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [](Journey/006/Readme.md)
