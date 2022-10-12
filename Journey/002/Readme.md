@@ -74,5 +74,40 @@ echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 - Create a security group and allow ssh and http access from the public to the EC2 instance.
 - Test connectivity.
   
-## Solution:
+### Solution:
 [![Youtube](https://img.youtube.com/vi/NGaRHg0VFsc/0.jpg)](https://www.youtube.com/watch?v=NGaRHg0VFsc)
+
+
+## AWS EC2 Instance Type
+
+- You can use different types of EC2 intances that are optimized for differenct use-cases(https://aws.amazon.com/ec2/instance-types)
+- AWS have the following naming convention(example: m5.2xlarge)
+  m: instance class
+  5: generation of instance(AWS Improves them over time)
+  2xlarge: size within the instance type
+
+### EC2 Instance Types
+
+- ### General Purpose
+  - Great for diversity of workloads such as web servers or code repositories.
+  - Balance between compute, memory and networking
+
+
+- ### Compute Optimed
+  - Great for compute-intensive task that requires high-performance processors
+  - Use Cases:
+    - Batch processing workloads
+    - Media transcoding
+    - High Performance Web Servers
+    - High Performance computing(HPC)
+    - Scientific modelling and machine learning
+    - Dedicated gaming servers
+
+- ### Memory Optimized
+  - Fast performance for workloads that process large data sets in memory.
+  - Use Cases:
+    - High performance, relational/non relational databases
+    - Distributed web scale cache stores
+    - In - memory databases optimized for BI(Business Intelligence)
+    - Applications performing real-time processing of big structured data.
+  - R Series EC2
