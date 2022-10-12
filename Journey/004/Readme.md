@@ -1,52 +1,111 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
-
+# Day 004 - EC2 Instance Storage
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+Goal: Learn EC2 Instance Storage to further add knowledge about AWS Services to help me in my certification.
 
-## Prerequisite
+## What is an EBS Volume
+- An EBS(elastic block store) Volume is a network drive that you can attach to your EC2 Instance while they run.
+- It allows your instances to persist data, even after their termination.
+- They can only be mounted to one instance at a time(Cloud Practitioner Level).
+- They are bound to a specific availability zone.
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+## EBS Volume
+- It's a network drive(i.e not a physical drive)
+  - It uses the network to communicate the instace, which means there might be a bit of latency.
+  - It can detached from EC2 instance and attached to another one quickly
+- It's locked to an AZ.
+  - An EBS volume on us-east-1 cannot be attached to us-east-2
+  - To move a volume accross, you first need to snapshot it.
+- Have a provisioned capacity (size in GB's and IOPS)
+  - You get billed for all the provisioned capacity
+  - You can increase the capacity of the drive over-time
 
-## Use Case
+## EBS Snapshot
+- Make backup(Snapshot) of your EBS volume at a point in time
+- Not necessary to detach volume to do snapshot, but recommended
+- Can copy snapshots accross AZ or Region
 
-- 🖼️ (Show-Me) Create an graphic or diagram that illustrate the use-case of how this knowledge could be applied to real-world project
-- ✍️ (Show-Me) Explain in one or two sentences the use case
+## EBS Snapshots Features
+- EBS Snapshot Archieve
+  - Move a snapshot to an archive tier that is 75% cheaper
+  - Takes within 24 to 72 hours for restoring the archive
+- Recycle Bin for EBS Snapshots
+  - Setup rules to retain deleted snapshots so you can recover them after an accidental deletion.
+  - Specify retention(from 1 day to 1 year)
 
-## Cloud Research
+## AMI Overview
+- AMI = Amazon Machine Image
+- AMI are customization of an EC2 instance
+  - You can add your own software, configuration, operating system, monitoring.....
+  -  Faster boot / configuration time because all your software is pre-packaged
+-  AMI are built for specific region(and can be copied across regions)
+-  You can launch EC2 instances from:
+  -   A Public AMI: AWS provided
+  -   Your own AMI: you make and maintain them yourself
+  -   An AWS Marketplace AMI: an AMI someone else made(and potentially sells)
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+## AMI Process(from an EC2 Instance)
+- Start an EC2 Instance and customize it
+- Stop the instance(for data integrity)
+- Build an AMI - this will also create and EBS Snapshot
+- Launch the instace from the customized AMI
 
-## Try yourself
+## EC2 Image Builder
+- Used to automate the creation of Virtual Machine or container images
+- Automate the creation, maintain, validate and test EC2 AMIs
+- Can be run on a schedule (weekly, or whenever packages are updated, etc etc)
+- Free service (only pay the underlying resources)
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+## EC2 Instance Store
+- EBS volumes are network drives with good but limited performance
+- If you need a high-performance hardware disk, use EC2 instance store
+- Better I/O performance, very high IOPS
+- EC2 Instance sore lose their storage if they're stopped(ephemeral)
+- Good for buffer/cache/scratch data/ temporary content
+- Risk of data loss if hardware fails
+- Backups and replication are customer responsibility.
 
-### Step 1 — Summary of Step
+## EFS - Elastic File System
+- Managed NFS(network file system) that can be mounted on multiple instances
+- EFS works with Linux EC2 Instance in multi-az
+- High available,scalable, expensive(3x gp2 ebs), pay per use, no capacity planning
 
-![Screenshot](https://via.placeholder.com/500x300)
+## EFS Infrequent(EFS-IA)
+- Storage class that is cost-optimized for files not accessed everyday
+- Up to 92% lower cost compared to EFS Standard
+- EFS will automatically move your files to EFS-IA based on last time they were accessed
+- Enable EFS-IA with a lifecycle policy
+- Transparent to the application
 
-### Step 1 — Summary of Step
+## Shared Responsibily for EC2 Storage
+- AWS
+  - Infrastructure
+  - Replication for data for EBS Volume and EFS drives
+  - Replacing faulty hardware
+  - Ensuring their employees cannot access your data
+ - Customer
+  - Setting up backup/snapshot procedures
+  - Setting up data encryption
+  -  Responsibility of any data on the drive
+  -  Understanding the risk of using EC2 Instance Store
+  
+## Amazon FSx - Overview
+- launch 3rd party high-performance file systems on AWS
+- Fully Managed Service
+  - FSx for lustre
+  - FSx for windows file server
+  - FSx for NetApp onTAP
 
-![Screenshot](https://via.placeholder.com/500x300)
+### FSx for Windows File Server
+- A fully managed, higly reliable and scalabe Windows native shared file system
+- Built on windows file server
+- Supports SMB protocol and NTFS
+- Integrated with Microsoft Active Directory
+- Can be access from AWS or your on-premise infratructure
 
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
+### FSx for Lustre
+- A fully managed high-performance, scalable file storage for High-Performance Computing(HPC)
+- The name Lustre is derived from Linux and Cluster
+- Machine Learning, Analytics, Video Processing, Financial Modelling
+- Scales up to 100s GB/s, millions of IOPS, sub-ms latencies.
+a
