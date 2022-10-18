@@ -108,4 +108,3 @@ Goal: Learn EC2 Instance Storage to further add knowledge about AWS Services to 
 - The name Lustre is derived from Linux and Cluster
 - Machine Learning, Analytics, Video Processing, Financial Modelling
 - Scales up to 100s GB/s, millions of IOPS, sub-ms latencies.
-a
